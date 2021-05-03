@@ -1,0 +1,122 @@
+:root{
+    font-size: 16px;
+    --primary-color: #043D5E;
+    --secondary-color: #026FA7;
+    --third-color: #00A8FF;
+}
+
+body{
+    font-size: 15px;
+}
+
+/* HOME */
+.banner{
+    background: url('../images/Group 6@2x.png') no-repeat center fixed;
+    /* background-repeat: no-repeat; */
+    background-size: contain; 
+    height: 600px;
+    width: 100%;
+}
+.link{
+    margin-top: 10px;
+}
+.nav-item{
+    padding: 10px;
+}
+.nav-link{
+    color: #043D5E;
+    font-size: 22px;
+}
+.btn-brand{
+    padding: 8px 15px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-decoration: none;
+}
+.btn-brand:hover{
+    background-color: #FFF;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+.banner-content{
+    padding-top: 150px;
+    color: #FFF;
+}
+.banner-content .name{
+    color: #FFF;
+    font-size: 70px;
+    font-weight: bold;
+}
+.banner-content h2{
+    color: var(--third-color);
+    font-size: 50px;
+}
+.banner-content p{
+    width: 450px;
+}
+.about-banner{
+    font-weight: lighter;
+    font-size: 22px;
+}
+h1{
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    width: max-content;
+}
+.img{
+    height: 270px;
+    width: 270px;
+    object-fit: cover;
+}
+.p-width{
+    width: 500px;
+    text-align: justify;
+}
+.bg-light{
+    color: var(--primary-color);
+    padding: 20px;
+}
+.bg-light h4{
+    color: var(--primary-color);
+}
+.bg-brand{
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 20px;
+}
+.bg-brand h4{
+    color: #FFF;
+}
+.centered{
+    text-align: center;
+    margin: 0 auto;
+}
+.rate-75{
+    height: 10px;
+    background-color: #FFF;
+}
+.rate-25{
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.rate-light-75{
+    height: 10px;
+    background-color: var(--primary-color);
+}
+.rate-light-25{
+    height: 10px;
+    background-color: rgb(4, 61, 94, 0.5);
+}
+.hover-project{
+    background-color: none;
+    /* visibility: hidden; */
+    position: absolute;
+    height: max-content;
+    width: 270px;
+}
+.hover-project:hover{
+    /* visibility: visible; */
+    background-color: rgb(4, 61, 94, 0.4);
+    padding: 100px;
+    width: 270px;
+}
