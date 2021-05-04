@@ -18,6 +18,16 @@
  
            <!-- FONT AWESOME -->
            <script src="https://kit.fontawesome.com/c32e345056.js" crossorigin="anonymous"></script>
+
+           <script src="https://code.jquery.com/jquery.min.js"></script>
+           <script src="src/jquery.typer.js"></script>
+           <link href="parallax-scrolling-animation/jquery.parallax.css" rel="stylesheet" />
+            
+            <!-- <script src="/path/to/cdn/jquery.min.js"></script> -->
+            
+            <script src="parallax-scrolling-animation/jquery.parallax.js"></script>
+
+           
     </head>
 
     <body>
@@ -51,8 +61,8 @@
 
 
         <div class="container-fluid banner-right-left">
-            <div class="row">
-                <div class="col-6 brand-left gray-color">
+            <div class="row" id="banner" data-rate="0.2" data-effect="zoom" data-func="custom_show">
+                <div class="col-6 brand-left gray-color" >
                     <div class="container">
                         <h4>Graphic and Digital</h4>
                         <span class="brand">DESIGNER</span>
@@ -60,9 +70,9 @@
                     </div>
                 </div>
                 <div class="col-6 brand-right">
-                    <div class="container">
+                    <div class="container" data-bg="bg.jpg">
                         <h4>Frontend</h4>
-                        <span class="brand-white">DEVELOPER</span>
+                        <span class="brand-white">Developer</span>
                         <h2>Backend</h2>
                     </div>
                 </div>
@@ -70,8 +80,9 @@
         </div>
 
 
-        <div class="mt-5 content">
-            <div class="container centered">
+        <div class="mt-5 content" data-func="show_2">
+
+            <div class="container centered" data-rate="0.5" data-effect="slide-up">
                 <h1 class="centered">About me</h1>
                 <p class="mt-5 w-30">I am Ritchmond Gilles, a freelance logo designer, Ui & Ux Designer and Fullstack Developer
                     from Port-au-Prince, Haiti. I am 22 years old, I like to solve problems thanks to my work as
@@ -80,11 +91,11 @@
                 </p>
             </div>
 
-            <div class="mt-5 bg-light p-3">
+            <div class="mt-5 bg-light p-3" data-rate="0.5" data-effect="slide-up">
                 <h1 class="centered">Experiences</h1>
-                <div class="xp-list mt-5">
+                <div class="xp-list mt-5" >
                     <h5> Graphic Designer & Fullstack Developer  <span class="date">- Actually </span></h5>
-                    <div class="xp">
+                    <div class="xp" data-rate="0.5" data-effect="slide-right">
                         <ol>
                             <li>Graphic creations.</li>
                             <li>Brand development.</li>
@@ -100,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="xp-list mt-5">
+                <div class="xp-list mt-5" data-rate="0.5" data-effect="slide-left">
                     <h5> Head of Business Development
                         and customer relations at<span class="date"> - PAFRULE in 2020</span></h5>
                     <div class="xp">
@@ -141,11 +152,13 @@
                 </div>
             </div>
             
-            <div class="container mt-5 level">
+        </div>
+
+            <div class="container mt-5 level" data-rate="0.2" data-effect="flip-x">
                 <h1 class="centered mt-5">Education</h1>
-                <div class="row mt-5 align-items-center">
+                <div class="row mt-5 align-items-center" id="education">
                     <div class="col-3 justify-content-end"> 
-                        <h3>Bachelor of <br> Computer Science <br> <span class="date"> 2016 - 2020 </span></h3>
+                        <h3>Bachelor of  Computer Science <span class="date"> 2016 - 2020 </span></h3>
                     </div>
                     <div class="col-7 bg-brand">
                         <h4>Ecole Supérieure d'Infotronique d'Haïti - ESIH </h4>
@@ -154,7 +167,7 @@
                     </div>
                 </div>
 
-                <div class="row mt-5 align-items-center">
+                <div class="row mt-5 align-items-center" id="education">
                     <div class="col-3 justify-content-end">
                         <h3>DUT Degree <br> <span class="date"> 2017 - 2019 </span></h3>
                     </div>
@@ -167,7 +180,7 @@
             </div>  
 
 
-            <div class="container mt-5">
+            <div class="container mt-5"  data-rate="0.6" data-effect="slide-right">
                 <h1 class="centered mt-5">Skills</h1>
                 <div class="row mt-5">
                     <div class="col bg-light mx-1">
@@ -208,7 +221,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col bg-brand mx-1">
+                    <div class="col bg-brand mx-1"  data-bg="bg.jpg" data-rate="0.6" data-effect="slide-left">
                         <h4 class="container">AS DEVELOPER </h4>
                         <hr>
 
@@ -290,6 +303,17 @@
                 </p>
             </div>
 
-        </div>
+        <!-- </div> -->
     </body>
 </html>
+
+<script type="text/javascript">
+
+$('#main').parallax({mode:1});
+function custom_show(obj, mode) {
+    obj.children().addClass('animation animation_'+mode);
+}
+
+$('body').parallax();
+
+</script>

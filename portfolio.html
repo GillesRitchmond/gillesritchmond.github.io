@@ -20,6 +20,14 @@
 
           <!-- FONT AWESOME -->
           <script src="https://kit.fontawesome.com/c32e345056.js" crossorigin="anonymous"></script>
+
+          <script src="https://code.jquery.com/jquery.min.js"></script>
+           <script src="src/jquery.typer.js"></script>
+           <link href="parallax-scrolling-animation/jquery.parallax.css" rel="stylesheet" />
+            
+            <!-- <script src="/path/to/cdn/jquery.min.js"></script> -->
+            
+            <script src="parallax-scrolling-animation/jquery.parallax.js"></script>
     </head>
 
     <body>
@@ -51,7 +59,7 @@
             </div>
         </nav>
 
-        <div class="container mt-5">
+        <div class="container mt-5" data-rate="0.2" data-effect="zoom" data-func="custom_show">
             <div class="row bg-light rounded-3">
                 <div class="col-5">
                     <img src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg" class="img-portfolio">
@@ -80,3 +88,13 @@
         </div>
     </body> 
 </html> 
+<script type="text/javascript">
+
+    $('#main').parallax({mode:1});
+    function custom_show(obj, mode) {
+        obj.children().addClass('animation animation_'+mode);
+    }
+    
+    $('body').parallax();
+    
+</script>

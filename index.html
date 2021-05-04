@@ -18,6 +18,14 @@
 
           <!-- FONT AWESOME -->
           <script src="https://kit.fontawesome.com/c32e345056.js" crossorigin="anonymous"></script>
+
+          <script src="https://code.jquery.com/jquery.min.js"></script>
+           <script src="src/jquery.typer.js"></script>
+           <link href="parallax-scrolling-animation/jquery.parallax.css" rel="stylesheet" />
+            
+            <!-- <script src="/path/to/cdn/jquery.min.js"></script> -->
+            
+            <script src="parallax-scrolling-animation/jquery.parallax.js"></script>
     </head>
 
     <body>
@@ -50,7 +58,7 @@
         </nav>
 
 
-        <div class="banner w-100">
+        <div class="banner w-100" data-rate="0.2" data-effect="zoom" data-func="custom_show">
             <div class="container">
                 <div class="banner-content">
                         <h2>Hello,</h2>
@@ -63,7 +71,7 @@
 
 
         <div class="container mt-5 content">
-                <div class="row mt-5">
+                <div class="row mt-5" data-rate="0.2" data-effect="slide-up" data-func="custom_show">
                     <div class="col">
                         <h1>About me</h1>
                         <p class="mt-4 p-width">I am Ritchmond Gilles, a freelance Logo Designer, Ui &  Ux Designer and Fullstack Developer. I like to solve 
@@ -76,12 +84,12 @@
                     </div>
                 </div>
 
-                <div class="row mt-5">
+                <div class="row mt-5" data-rate="0.2" data-effect="slide-down" data-func="custom_show">
                      <div class="col portfolio">
                         <img src="images/alexandru-acea--WBYxmW4yuw-unsplash@2x.png" class="d-block w-100 img">
                     </div>
                     <div class="col">
-                        <h1>Why you should work with me ?</h1>
+                        <div class="so-long"><h1>Why you should work with me ?</h1></div>
                         <i>I can help you as a designer or developer or both of them !</i>
                         <p class="mt-3 p-width">
                             As a designer, I can ensure the development of your brand, of your visual communication, I can also ensure the design of your
@@ -98,7 +106,7 @@
                 <div class="mt-5">
                     <h1 class="centered mt-5">Skills</h1>
                     <div class="row mt-5">
-                        <div class="col bg-light">
+                        <div class="col bg-light" data-rate="0.2" data-effect="zoom" data-func="custom_show">
                             <h4 class="container">AS DESIGNER</h4>
                             <hr>
 
@@ -136,7 +144,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col bg-brand">
+                        <div class="col bg-brand" data-rate="0.2" data-effect="zoom" data-func="custom_show">
                             <h4 class="container">AS DEVELOPER </h4>
                             <hr>
 
@@ -177,10 +185,10 @@
                     </div>
                 </div>
 
-                <div class="works mt-5">
+                <div class="works mt-5" data-rate="0.2" data-effect="zoom" data-func="custom_show">
                     <h1 class="centered">My Works</h1>
                     <div class="mt-3 container">
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center" >
                             <ul class="nav justify-content-center ">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Branding</a>
@@ -198,7 +206,7 @@
                         </div>
 
 
-                        <div class="row mt-4">
+                        <div class="row mt-4" data-rate="0.2" data-effect="slide-up" data-func="custom_show">
                             <div class="col-sm-3 portfolio">
                                 <img src="images/alexandru-acea--WBYxmW4yuw-unsplash@2x.png" class="img"> 
                                 <div class="overlay">
@@ -231,7 +239,7 @@
                 </div>
             </div>
 
-            <div class="container mt-5" id="contact">
+            <div class="container mt-5" id="contact" data-rate="0.2" data-effect="zoom" data-func="custom_show">
                 <h1 class="centered">Contact me</h1>
                 <br>
                 <p class="centered mt-2"><i>Let's realize beautiful projects together</i></p>
@@ -255,7 +263,7 @@
                                 <textarea class="form-control" name="comment" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                                 <label for="floatingTextarea2">Comments</label>
                             </div>
-                            <div class="col-12 submit-btn mt-3">
+                            <div class="mt-3">
                                 <button class="btn-brand-solid" type="submit">Envoyer</button>
                             </div>
                         </div>
@@ -263,8 +271,8 @@
                 </div>
             </div>
 
-            <div class="footer mt-5 p-3">
-                <p class="centered footer-p">
+            <div class="footer mt-5 p-3"> 
+                <p class="footer-p"> Follow
                     <a href="https://github.com/GillesRitchmond/" class="footer-link mx-1"> <i class="fab fa-github"></i> </a>
                     <a href="https://ht.linkedin.com/in/ritchmond-gilles-5187b5168" class="footer-link mx-1"> <i class="fab fa-linkedin"></i> </a>
                     <a href="https://www.instagram.com/made.by.ritchmond/" class="footer-link mx-1"> <i class="fab fa-instagram"></i> </a>
@@ -273,3 +281,13 @@
             </div>
     </body>
 </html>
+<script type="text/javascript">
+
+    $('body').parallax({mode:1});
+    function custom_show(obj, mode) {
+        obj.children().addClass('animation animation_'+mode);
+    }
+    
+    // $('body').parallax();
+    
+</script>

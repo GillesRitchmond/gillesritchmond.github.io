@@ -79,11 +79,13 @@ body{
 .about-banner{
     font-weight: lighter;
     font-size: 22px;
+    margin-bottom: 30px;
 }
 h1{
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     width: max-content;
+    padding-bottom: 10px;
 }
 .img{
     height: 100%;
@@ -185,7 +187,6 @@ h1{
     color: var(--gray);
 }
 .gray{
-    
     color: var(--gray-color);
 }
 .brand-white{
@@ -290,6 +291,8 @@ i{
 }
 .footer-p{
     font-size: 20px;
+    color: #FFF;
+    text-align: center;
 }
 .footer-link{
     color: #FFF;
@@ -298,4 +301,125 @@ i{
 }
 .footer-link:hover{
     color: var(--third-color);
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    body{
+        font-size: 12px;
+        width: auto;
+    }
+    .banner-content{
+        padding: 60px 0;
+    }
+    .banner-content .name{
+        font-size: 50px;
+    }
+    .banner-content p{
+        width: 300px;
+    }
+    .about-banner{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .banner{
+        background: var(--primary-color);
+        height: auto;
+        width: 100%; 
+    }
+    .p-width{
+        width: 350px;
+    }
+    .portfolio{
+        padding: 10px;
+    }
+    h1{
+        width: max-content;
+        padding-bottom: 10px;
+    }
+    .so-long h1{
+        width: 90%;
+    }
+    .bg-light .skills{
+        width: 350px;
+    }
+    .nav-item{
+        padding: 0px;
+    }
+    #contact .bg-brand{
+        width: auto;
+    }
+    #contact .bg-light{
+        width: auto;
+    }
+    .form-row{
+        width: auto;
+    }
+    .form-floating .form-control{
+        width: 320px;
+    }
+
+
+    /* ABOUT ME */
+    
+    .brand{
+        font-size: 50px;
+    }
+    .brand-white{
+        font-size: 50px;
+    }
+    #banner .brand-left{
+        width: 100%;
+        height: 200px;
+    }
+    .brand-left{
+        padding: 20px;
+    }
+    #banner .brand-right{
+        width: 100%;
+        height: 200px;
+    }
+    .brand-left .container{
+        margin-top: 10px;
+    }
+    .brand-right .container{
+        margin-top: 10px;
+    }
+    .container h4{
+        font-size: 30px;
+    }
+    .container h2{
+        font-size: 30px;
+    }
+    .centered .w-30{
+        width: auto;
+        text-align: justify;
+    }
+    .xp-list{
+        margin-left: 8px;
+    }
+    .xp{
+        margin-left: 8px;
+    }
+    .level{
+        margin-left: 0px;
+    }
+    .justify-content-end h3{
+        width: 350px;
+        text-align: center;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    #education .bg-brand{
+        width: auto;
+        padding: 30px;
+    }
+    #education .bg-light{
+        width: auto;
+        padding: 30px;
+    }
+    
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    
 }
