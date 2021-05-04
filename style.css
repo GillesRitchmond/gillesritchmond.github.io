@@ -279,6 +279,52 @@ i{
     width: 400px;
     object-fit: cover;
 }
+#canvas_container {
+    width: 700px;
+    height: 500px;
+    overflow: auto;
+    /* margin:0 auto; */
+    padding: 15px;
+    /* background: var(--gray-color); */
+    text-align: center;
+    border: solid 1px var(--primary-color);
+    object-fit: contain;
+}
+#pdf_renderer{
+    width: auto;
+    height: 450px;
+    object-fit: fill;
+}
+.w-form{
+    width: 10px;
+}
+
+/* CONTACT */
+#contact-banner .container{
+    width: auto;
+    text-align: center;
+    height: 280px;
+    margin: 80px 80px 0 ;
+}
+#contact-banner .container h1{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    color: #FFF;
+    border: none;
+}
+#contact-banner .container #contact-banner-i{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content-contact{
+    margin-top: 55px;
+}
+.content-contact .bg-light{
+    padding: 50px;
+}
+
 
 /* footer */
 .footer{
@@ -303,7 +349,7 @@ i{
     color: var(--third-color);
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 320px) and (max-width: 480px){
     body{
         font-size: 12px;
         width: auto;
@@ -327,7 +373,181 @@ i{
         width: 100%; 
     }
     .p-width{
-        width: 350px;
+        width: 320px;
+    }
+    #m-top{
+        margin-top: 20px;
+    }
+    .portfolio{
+        padding: 10px;
+    }
+    h1{
+        width: max-content;
+        padding-bottom: 10px;
+    }
+    .so-long h1{
+        width: 90%;
+    }
+    .bg-light .skills{
+        width: 330px;
+    }
+    .nav-item{
+        padding: 0px;
+    }
+    #contact .bg-brand{
+        width: auto;
+    }
+    #contact .bg-light{
+        width: auto;
+    }
+    .form-row{
+        width: auto;
+    }
+    .form-floating .form-control{
+        width: 300px;
+    }
+
+
+    /* ABOUT ME */
+    
+    .brand{
+        font-size: 50px;
+    }
+    .brand-white{
+        font-size: 50px;
+    }
+    #banner .brand-left{
+        width: 100%;
+        height: 200px;
+    }
+    .brand-left{
+        padding: 20px;
+    }
+    #banner .brand-right{
+        width: 100%;
+        height: 200px;
+    }
+    .brand-left .container{
+        margin-top: 10px;
+    }
+    .brand-right .container{
+        margin-top: 10px;
+    }
+    .container h4{
+        font-size: 30px;
+    }
+    .container h2{
+        font-size: 30px;
+    }
+    .centered .w-30{
+        width: auto;
+        text-align: justify;
+    }
+    .xp-list{
+        margin-left: 8px;
+    }
+    .xp-list h5{
+        width: auto;
+    }
+    .xp{
+        margin-left: 8px;
+    }
+    .level{
+        margin-left: 0px;
+    }
+    .justify-content-end h3{
+        width: 330px;
+        text-align: center;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    #education .bg-brand{
+        width: auto;
+        padding: 30px;
+    }
+    #education .bg-light{
+        width: auto;
+        padding: 30px;
+    }
+    
+    /* PORTFOLIO */
+    #building .bg-light{
+        width: auto;
+    }
+    #building .bg-light .col-5 .img-portfolio{
+        width: auto;
+    }
+    #building .bg-light .col-7{
+        width: auto;
+    }
+
+    /* CONTACT */
+
+    #contact-banner .container{
+        width: auto;
+        text-align: center;
+        margin: 0px;
+        height: 200px;
+    }
+    #contact-banner .container h1{
+        text-align: center;
+        width: auto;
+        margin: 0 auto;
+        color: #FFF;
+        border: none;
+    }
+    #contact-banner .container #contact-banner-i{
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content-contact{
+        margin-top: -100px;
+    }
+    .content-contact .bg-light{
+        padding: 15px;
+    }
+
+    .content-contact .centered{
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .content-contact .contact-why{
+        margin-top: 30px;
+    }
+    .content-contact .centered h1{
+        width: 300px;
+        padding: 10px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    body{
+        font-size: 12px;
+        width: auto;
+    }
+    .banner-content{
+        padding: 60px 0;
+    }
+    .banner-content .name{
+        font-size: 50px;
+    }
+    .banner-content p{
+        width: 300px;
+    }
+    .about-banner{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .banner{
+        background: var(--primary-color);
+        height: auto;
+        width: 100%; 
+    }
+    .p-width{
+        width: 330px;
     }
     .portfolio{
         padding: 10px;
@@ -417,9 +637,5 @@ i{
         width: auto;
         padding: 30px;
     }
-    
-}
-
-@media (min-width: 480px) and (max-width: 767px){
     
 }
