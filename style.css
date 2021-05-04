@@ -4,6 +4,7 @@
     --secondary-color: #026FA7;
     --third-color: #00A8FF;
     --gray-color: #CECECE;
+    --gray: #707070;
 }
 
 body{
@@ -28,6 +29,9 @@ body{
     color: #043D5E;
     font-size: 22px;
 }
+.white{
+    color:#FFF;
+}
 .btn-brand{
     padding: 8px 15px;
     border: 1px solid #FFF;
@@ -38,6 +42,12 @@ body{
     background-color: #FFF;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
+}
+.btn-brand-solid{
+    padding: 8px 15px;border: 1px solid var(--primary-color);
+    color: #FFF;
+    background-color: var(--primary-color);
+    text-decoration: none;
 }
 .btn-brand-color{
     padding: 8px 15px;
@@ -110,7 +120,7 @@ h1{
     text-align: center;
 }
 .p-width{
-    width: 500px;
+    width: 550px;
     text-align: justify;
 }
 .bg-light{
@@ -163,14 +173,30 @@ h1{
 }
 
 /* ABOUT ME */
-
+.h-400{
+    height: 400px;
+}
+.w-10{
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
 .gray-color{
+    color: var(--gray);
+}
+.gray{
+    
     color: var(--gray-color);
 }
 .brand-white{
     color: #FFF;
     font-size: 70px;
     font-weight: bold;
+}
+.brand-white-50{
+    color: #FFF;
+    font-size: 50px;
+    font-weight: bold; 
 }
 .brand{
     color: var(--primary-color);
@@ -214,7 +240,33 @@ h1{
     width: 700px;
     margin: 0 auto;
 }
-
+h5{
+    color: var(--primary-color);
+    width: 350px;
+}
+.date{
+    color: var(--gray);
+}
+.xp-list{
+    margin-left: 200px;
+}
+.xp{
+    margin-left: 260px;
+    border-left: 2px solid var(--primary-color);
+}
+.justify-content-end{
+    text-align: right;
+    margin-right: 20px;
+}
+.level{
+    margin-left: 30px;
+}
+i{
+    font-size: 20px;
+}
+.form-row{
+    width: 600px;
+}
 /* PORTFOLIO */
 .portfolio{
     height: 200px;
