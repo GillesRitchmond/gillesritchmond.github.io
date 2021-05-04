@@ -638,4 +638,56 @@ i{
         padding: 30px;
     }
     
+    /* PORTFOLIO */
+    #building .bg-light{
+        width: auto;
+    }
+    #building .bg-light .col-5 .img-portfolio{
+        width: auto;
+    }
+    #building .bg-light .col-7{
+        width: auto;
+    }
+
+    /* CONTACT */
+
+    #contact-banner .container{
+        width: auto;
+        text-align: center;
+        margin: 0px;
+        height: 200px;
+    }
+    #contact-banner .container h1{
+        text-align: center;
+        width: auto;
+        margin: 0 auto;
+        color: #FFF;
+        border: none;
+    }
+    #contact-banner .container #contact-banner-i{
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content-contact{
+        margin-top: -100px;
+    }
+    .content-contact .bg-light{
+        padding: 15px;
+    }
+
+    .content-contact .centered{
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .content-contact .contact-why{
+        margin-top: 30px;
+    }
+    .content-contact .centered h1{
+        width: 300px;
+        padding: 10px;
+    }
+
+    
 }
