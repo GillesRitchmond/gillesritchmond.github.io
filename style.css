@@ -268,10 +268,20 @@ i{
 .form-row{
     width: 600px;
 }
+
 /* PORTFOLIO */
 .portfolio{
     height: 200px;
     width: 400px;
+    object-fit: cover;
+}
+.my-work
+{
+    width: auto;
+}
+.portfolio-img{
+    height: 250px;
+    width: 300px;
     object-fit: cover;
 }
 .img-portfolio{
@@ -334,11 +344,18 @@ i{
 }
 .fab{
     margin-right: 10px;
+    color: #FFF;
 }
 .footer-p{
     font-size: 20px;
     color: #FFF;
     text-align: center;
+}
+.footer .footer-link{
+    color: #FFF;
+}
+.footer .footer-link:hover{
+    color: var(--third-color);
 }
 .footer-link{
     color: #FFF;
@@ -523,7 +540,7 @@ i{
 
 }
 
-@media (min-width: 480px) and (max-width: 767px){
+@media (min-width: 481px) and (max-width: 767px){
     body{
         font-size: 12px;
         width: auto;
@@ -547,10 +564,21 @@ i{
         width: 100%; 
     }
     .p-width{
-        width: 330px;
+        width: 320px;
+    }
+    #m-top{
+        margin-top: 20px;
     }
     .portfolio{
-        padding: 10px;
+        /* padding: 10px; */
+        visibility: hidden;
+    }
+    .content .row .portfolio{
+        width: auto;
+        display: none;
+    }
+    .content .row #col-width{
+        width: 400px;
     }
     h1{
         width: max-content;
@@ -569,7 +597,7 @@ i{
         width: auto;
     }
     #contact .bg-light{
-        width: auto;
+        width: 400px;
     }
     .form-row{
         width: auto;
@@ -675,7 +703,6 @@ i{
     .content-contact .bg-light{
         padding: 15px;
     }
-
     .content-contact .centered{
         width: 320px;
         margin: 0 auto;
