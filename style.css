@@ -366,7 +366,7 @@ i{
     color: var(--third-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 250px) and (max-width: 480px){
     body{
         font-size: 12px;
         width: auto;
