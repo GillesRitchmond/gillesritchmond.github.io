@@ -92,6 +92,7 @@ h1{
     width: auto;
     object-fit: cover;
 }
+
 /* The overlay effect (full height and width) - lays on top of the container and over the image */
 .overlay {
     position: absolute;
@@ -277,18 +278,21 @@ i{
 }
 .my-work
 {
-    width: auto;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    /* width: auto; */
 }
 .portfolio-img{
-    height: 250px;
-    width: 300px;
-    object-fit: cover;
-}
-.img-portfolio{
     height: 200px;
-    width: 400px;
-    object-fit: cover;
+    width: 350px;
+    object-fit: contain;
 }
+/* .portfolio-img .img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+} */
 #canvas_container {
     width: 700px;
     height: 500px;
@@ -340,6 +344,8 @@ i{
 .footer{
     background-color: var(--primary-color);
     height: 60px;
+}
+#footer-color {
     color: #FFF;
 }
 .fab{
@@ -357,14 +363,13 @@ i{
 .footer .footer-link:hover{
     color: var(--third-color);
 }
-.footer-link{
+/* .footer-link{
     color: #FFF;
     text-decoration: none;
-    /* font-size: ; */
 }
 .footer-link:hover{
     color: var(--third-color);
-}
+} */
 
 @media screen and (min-width: 250px) and (max-width: 480px){
     body{
@@ -389,14 +394,29 @@ i{
         height: auto;
         width: 100%; 
     }
+    .col-width{
+        width: auto;
+    }
     .p-width{
-        width: 320px;
+        width: auto;
     }
     #m-top{
         margin-top: 20px;
     }
     .portfolio{
         padding: 10px;
+        width: 300px;
+        height: 200px;
+    }
+    .portfolio-img{
+        height: 280px;
+        width: 280px;
+        object-fit: contain;
+    }
+    .img{
+        width: auto;
+        /* height:; */
+        object-fit: cover;
     }
     h1{
         width: max-content;
@@ -406,22 +426,26 @@ i{
         width: 90%;
     }
     .bg-light .skills{
-        width: 330px;
+        width: auto;
     }
     .nav-item{
         padding: 0px;
+    }
+    /* #contact,
+    .centered,
+    .form-floating,
+    .form-control{
+        width: auto;
+    } */
+
+    #contact .centered{
+        width: 300px;
     }
     #contact .bg-brand{
         width: auto;
     }
     #contact .bg-light{
         width: auto;
-    }
-    .form-row{
-        width: auto;
-    }
-    .form-floating .form-control{
-        width: 300px;
     }
 
 
@@ -491,8 +515,13 @@ i{
     #building .bg-light{
         width: auto;
     }
+    #building .img-box-portfolio{
+        width: 400px;
+    }
     #building .bg-light .col-5 .img-portfolio{
         width: auto;
+        height: 500px;
+        object-fit: cover;
     }
     #building .bg-light .col-7{
         width: auto;
