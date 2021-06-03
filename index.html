@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <title>Home</title>
         <link rel="stylesheet" type="text/css" href="style.css">
 
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <!-- GOOGLE ICONS -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
 
           <!-- FONT AWESOME -->
           <script src="https://kit.fontawesome.com/c32e345056.js" crossorigin="anonymous"></script>
 
           <script src="https://code.jquery.com/jquery.min.js"></script>
-           <script src="src/jquery.typer.js"></script>
-           <link href="parallax-scrolling-animation/jquery.parallax.css" rel="stylesheet" />
+           <link href="jquery.parallax.css" rel="stylesheet" />
             
             <!-- <script src="/path/to/cdn/jquery.min.js"></script> -->
             
-            <script src="parallax-scrolling-animation/jquery.parallax.js"></script>
+            <script src="jquery.parallax.js"></script>
     </head>
 
     <body>
@@ -75,172 +74,241 @@
 
 
         <div class="container mt-5 content">
-                <div class="container row mt-5" data-rate="0.2" data-effect="slide-up" data-func="custom_show">
-                    <div class="col-md" id="col-width">
-                        <h1>About me</h1>
-                        <p class="mt-4 p-width">I am Ritchmond Gilles, a freelance Logo Designer, Ui &  Ux Designer and Fullstack Developer. I like to solve 
-                            problems through my work as a designer or developer.
-                        </p>
-                        <a href="portfolio.html" class="btn-brand-color link">See more</a>
-                    </div>
-                    <div class="col-md portfolio">
-                        <img src="images/alexandru-acea--WBYxmW4yuw-unsplash@2x.png" class="d-block w-100 img">
-                    </div>
+            <div class="row space mt-5" data-rate="0.2" data-effect="slide-up" data-func="custom_show">
+                <div class="col-md mt-4 portfolio" id="small-screen">
+                    <img src="images/asset_3.png" class="d-block img" alt="about_me">
                 </div>
+                <div class="col-md mt-4" id="col-width">
+                    <h1>About me</h1>
+                    <p class="mt-4 p-width">I am Ritchmond Gilles, a freelance Logo Designer, Ui &  Ux Designer and Fullstack Developer. I like to solve 
+                        problems through my work as a designer or developer.
+                    </p>
+                    <a href="portfolio.html" class="btn-brand-color link">See more</a>
+                </div>
+                <div class="col-md mt-4 portfolio ms-5" id="large-screen">
+                    <img src="images/asset_3.png" class="d-block img ms-3" alt="about_me">
+                </div>
+            </div>
 
-                <div class="container row mt-5" data-rate="0.2" data-effect="slide-down" data-func="custom_show">
-                     <div class="col-md portfolio">
-                        <img src="images/alexandru-acea--WBYxmW4yuw-unsplash@2x.png" class="d-block w-100 img">
-                    </div>
-                    <div class="col-md" id="m-top col-width">
-                        <div class="so-long"><h1>Why you should work with me ?</h1></div>
-                        <i>I can help you as a designer, developer or both of them !</i>
-                        <p class="mt-3 p-width">
-                            As a designer, I can ensure the development of your brand, of your visual communication, I can also ensure the design of your
-                            website or your mobile application.
-                                <br><br>
-                            As a developer I can make sure that the interface of your website is well done so that the users can have a very good experience
-                            with it and also make sure that your web application meets your needs or those of the users. Look at my works and Let's make something special.
-                        </p>
-                        <a href="contact.html" class="btn-brand-color link">Contact me</a>
-                    </div>
+            <div class="row space mt-5" data-rate="0.2" data-effect="slide-down" data-func="custom_show">
+                <div class="col-md mt-5 portfolio" id="resize">
+                    <img src="images/asset_4.png" class="d-block img rs-img" alt="work_with_me">
                 </div>
+                <div class="col-md mt-5 mb-5" id="m-top col-width">
+                    <div class="so-long"><h1>Why you should work with me ?</h1></div>
+                    <i>I can help you as a designer, developer or both of them !</i>
+                    <p class="mt-3 p-width">
+                        As a designer, I can ensure the development of your brand, of your visual communication, I can also ensure the design of your
+                        website or your mobile application.
+                            <br><br>
+                        As a developer I can make sure that the interface of your website is well done so that the users can have a very good experience
+                        with it and also make sure that your web application meets your needs or those of the users. Look at my works and Let's make something special.
+                    </p>
+                    <a href="contact.html" class="btn-brand-color link">Contact me</a>
+                </div>
+            </div>
                 
 
-                <div class="container mt-5">
-                    <h1 class="centered mt-5">Skills</h1>
-                    <div class="row mt-5">
-                        <div class="col bg-light" data-rate="0.2" data-effect="zoom" data-func="custom_show">
-                            <h4 class="container">AS DESIGNER</h4>
-                            <hr>
+            <div class="container mt-5">
+                <h1 class="centered mt-5">Skills</h1>
+                <div class="row mt-5">
+                    <div class="col bg-light" data-rate="0.2" data-effect="zoom" data-func="custom_show">
+                        <h4 class="container">AS DESIGNER</h4>
+                        <hr>
 
-                            <div class="skills container">
-                                <p>Adobe XD | Sketch | Figma & InVision
-                                    <div class="row">
-                                        <div class="col-10 rate-light-75"></div>
-                                        <div class="col-2 rate-light-25"></div>
-                                    </div>
-                                </p>
-                                
-                                <p>Adobe Illustrator | Photoshop & InDesign
-                                    <div class="row">
-                                        <div class="col-10 rate-light-75"></div>
-                                        <div class="col-2 rate-light-25"></div>
-                                    </div>
-                                </p>
-                                <p>Adobe Premiere Pro & Final Cut
-                                    <div class="row">
-                                        <div class="col-6 rate-light-75"></div>
-                                        <div class="col-6 rate-light-25"></div>
-                                    </div>
-                                </p>
-                                <p>Branding
-                                    <div class="row">
-                                        <div class="col-9 rate-light-75"></div>
-                                        <div class="col-3 rate-light-25"></div>
-                                    </div>
-                                </p>
-                                <p>Ui & Ux Design
-                                    <div class="row">
-                                        <div class="col-10 rate-light-75"></div>
-                                        <div class="col-2 rate-light-25"></div>
-                                    </div>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col bg-brand" data-rate="0.2" data-effect="zoom" data-func="custom_show">
-                            <h4 class="container">AS DEVELOPER </h4>
-                            <hr>
-
-                            <div class="skills container">
-                                <p>HTML | CSS & JavaScript
-                                    <div class="row">
-                                        <div class="col-9 rate-75"></div>
-                                        <div class="col-3 rate-25"></div>
-                                    </div>
-                                </p>
-                                
-                                <p>PHP | Java & Android
-                                    <div class="row">
-                                        <div class="col-8 rate-75"></div>
-                                        <div class="col-4 rate-25"></div>
-                                    </div>
-                                </p>
-                                <p>React Js | Symfony | ASP.Net | Bootstrap
-                                    <div class="row">
-                                        <div class="col-6 rate-75"></div>
-                                        <div class="col-6 rate-25"></div>
-                                    </div>
-                                </p>
-                                <p>MySQL | SQL | Doctrine ORM
-                                    <div class="row">
-                                        <div class="col-8 rate-75"></div>
-                                        <div class="col-4 rate-25"></div>
-                                    </div>
-                                </p>
-                                <p>Frontend & Backend Developer
-                                    <div class="row">
-                                        <div class="col-8 rate-75"></div>
-                                        <div class="col-4 rate-25"></div>
-                                    </div>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="works mt-5" data-rate="0.2" data-effect="zoom" data-func="custom_show">
-                    <h1 class="centered">My Works</h1>
-                    <div class="mt-3 container">
-                        <div class="d-flex justify-content-center" >
-                            <ul class="nav justify-content-center ">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#branding">Branding</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#uidesign">Ui design</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Frontend</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Project with backend</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                                
-                        <div class="my-work row mt-4" data-rate="0.2" data-effect="slide-up" data-func="custom_show">
-                            <div id="branding" class="col-md-3 ">
-                                <img src="images/Soul Food-04.jpg" class="portfolio-img"> 
-                                <div class="overlay">
-                                    <div class="text">Logo</div>
+                        <div class="skills container">
+                            <p>Adobe XD | Sketch | Figma & InVision
+                                <div class="row">
+                                    <div class="col-10 rate-light-75"></div>
+                                    <div class="col-2 rate-light-25"></div>
                                 </div>
-                            </div>
-                            <div id="branding" class="col-md-3 mt-1 "> <img src="images/diamond-logo.png" class="portfolio-img"> </div>
-                            <div id="branding" class="col-md-3 mt-1 "> <img src="images/Quotes Floetik-06.png" class="portfolio-img"> </div>
-                            <div id="branding"class="col-md-3 mt-1 "> <img src="images/Medcare Supply emballage.png" class="portfolio-img"> </div>
-
-                            <div id="uidesign"  class="col-md-3 mt-1"> <img src="images/MedCare Supply - Stationery-06.jpg" class="portfolio-img"> </div>
-                            <div id="uidesign"  class="col-md-3 mt-1"> <img src="images/clip clap-01.jpg" class="portfolio-img"> </div>
-                            <div id="uidesign"  class="col-md-3 mt-1"> <img src="images/Rèv-O-Lit_Return Address Labels - 60-sheet (2-3” x 1-3-4”) copy 4.jpg" class="portfolio-img"> </div>
-                            <div id="uidesign"  class="col-md-3 mt-1"> <img src="images/Yaquimel Radio-09.jpg" class="portfolio-img"> </div>
-
-                            <div id="uidesign"  class="col-md-3 mt-1"> <img src="images/Boyo-03.jpg" class="portfolio-img"> </div>
-                            <div id="uidesign"  class="col-md-3 mt-1"> <img src="images/Boyo-01.jpg" class="portfolio-img"> </div>
-                            <div id="uidesign"  class="col-md-3 mt-1"> <img src="images/ENST-Logo-01.jpg" class="portfolio-img"> </div>
-                            <div id="uidesign" class="col-md-3 mt-1"> <img src="images/Plant'Aime-03.jpg" class="portfolio-img"> </div>
-
-                            <div id="branding" class="col-sm-3 mt-1"> <img src="images/Magnifi-k Shop - Logo & Stationery-01.png" class="portfolio-img"> </div>
-                            <div id="branding" class="col-sm-3 mt-1 portfolio-img"> <img src="images/Magnifi-k Shop - Logo & Stationery-02.jpg" class="portfolio-img"> </div>
-                            <div id="branding" class="col-sm-3 mt-1 portfolio-img"> <img src="images/Magnifi-k Shop - Logo & Stationery-04.jpg" class="portfolio-img"> </div>
-                            <div id="branding" class="col-sm-3 mt-1 portfolio-img"> <img src="images/Magnifi-K Shop full.png" class="portfolio-img"> </div>
+                            </p>
+                            
+                            <p>Adobe Illustrator | Photoshop & InDesign
+                                <div class="row">
+                                    <div class="col-10 rate-light-75"></div>
+                                    <div class="col-2 rate-light-25"></div>
+                                </div>
+                            </p>
+                            <p>Adobe Premiere Pro & Final Cut
+                                <div class="row">
+                                    <div class="col-6 rate-light-75"></div>
+                                    <div class="col-6 rate-light-25"></div>
+                                </div>
+                            </p>
+                            <p>Branding
+                                <div class="row">
+                                    <div class="col-9 rate-light-75"></div>
+                                    <div class="col-3 rate-light-25"></div>
+                                </div>
+                            </p>
+                            <p>Ui & Ux Design
+                                <div class="row">
+                                    <div class="col-10 rate-light-75"></div>
+                                    <div class="col-2 rate-light-25"></div>
+                                </div>
+                            </p>
                         </div>
-                        <br><br>
-                        <div class="centered"><a href="portfolio.html" class="btn-brand-color">See more</a></div>
-                        
+                    </div>
+                    <div class="col bg-brand" data-rate="0.2" data-effect="zoom" data-func="custom_show">
+                        <h4 class="container">AS DEVELOPER </h4>
+                        <hr>
+
+                        <div class="skills container">
+                            <p>HTML | CSS & JavaScript
+                                <div class="row">
+                                    <div class="col-9 rate-75"></div>
+                                    <div class="col-3 rate-25"></div>
+                                </div>
+                            </p>
+                            
+                            <p>PHP | Java & Android
+                                <div class="row">
+                                    <div class="col-8 rate-75"></div>
+                                    <div class="col-4 rate-25"></div>
+                                </div>
+                            </p>
+                            <p>React Js | Symfony | ASP.Net | Bootstrap
+                                <div class="row">
+                                    <div class="col-6 rate-75"></div>
+                                    <div class="col-6 rate-25"></div>
+                                </div>
+                            </p>
+                            <p>MySQL | SQL | Doctrine ORM
+                                <div class="row">
+                                    <div class="col-8 rate-75"></div>
+                                    <div class="col-4 rate-25"></div>
+                                </div>
+                            </p>
+                            <p>Frontend & Backend Developer
+                                <div class="row">
+                                    <div class="col-8 rate-75"></div>
+                                    <div class="col-4 rate-25"></div>
+                                </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="works mt-5" data-rate="0.2" data-effect="zoom" data-func="custom_show">
+                <h1 class="centered">My Works</h1>
+                <div class="mt-3 container">
+                    <div class="d-flex justify-content-center" >
+                        <ul class="nav justify-content-center ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#all" onclick="allOnClick();return false;">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#branding" onclick="brandingOnClick();return false;">Branding</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#uidesign" onclick="uiDesignOnClick();return false;">Ui design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#frontend" onclick="frontendOnClick();return false;">Web Development</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#backend" onclick="backendOnClick();return false;">Project with backend</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div> 
+                
+                <div class="mt-2">
+
+                    <div id="branding" class="branding">
+                        <section class="photo-grid-container">
+                            <img src="images/diamond-logo.png" class="photo-grid-item">
+                            <img src="images/Boyo-01.jpg" class="photo-grid-item" alt="boyo">
+                            <img src="images/ENST-Logo-01.jpg" class="photo-grid-item" alt="enst">
+                            <img src="images/Cannelle.jpg" class="photo-grid-item" alt="cannelle">
+                            <img src="images/Magnifi-K Shop full.png" class="photo-grid-item" alt="cannelle">
+                            <img src="images/Magnifi-k Shop - Logo & Stationery-01.png" class="photo-grid-item" alt="mkshop">
+                            <img src="images/MedCare Supply - Stationery-06.jpg" class="photo-grid-item" alt="medcare">
+                            <img src="images/Quotes Floetik-06.png" class="photo-grid-item" alt="quotesFloetik">
+                            <img src="images/Plant'Aime-03.jpg" class="photo-grid-item" alt="plantaime">
+                            <img src="images/Yaquimel Radio-09.jpg" class="photo-grid-item" alt="Yaquimel">
+                            <img src="images/Medcare Supply emballage.png" class="photo-grid-item" alt="medcare">
+                            <img src="images/Soul Food-04.jpg" class="photo-grid-item" alt="soulfood">
+                            <img src="images/Rèv-O-Lit_Return Address Labels - 60-sheet (2-3” x 1-3-4”) copy 4.jpg" class="photo-grid-item">
+                        </section>
+                    </div>
+
+                    <div id="uidesign" class="branding">
+                        <section class="photo-grid-container">
+                            <!-- <img src="images/Ui-Ux-02.jpg" class="photo-grid-item" alt="ui"> -->
+                            <!-- <img src="images/Capture2.PNG" class="photo-grid-item" alt="ui"> -->
+                            <img src="images/Capture4.PNG" class="photo-grid-item" alt="ui">
+                            <!-- <img src="images/Ui-Ux-03.jpg" class="photo-grid-item" alt="ui"> -->
+                            <img src="images/Capture3.PNG" class="photo-grid-item" alt="ui">
+                            <img src="images/Capture2.PNG" class="photo-grid-item" alt="ui">
+                            <img src="images/Capture5.PNG" class="photo-grid-item" alt="ui">
+                            <img src="images/Capture6.PNG" class="photo-grid-item" alt="ui">
+                            <img src="images/Capture7.PNG" class="photo-grid-item" alt="ui">
+                            <!-- <img src="images/Ui-Ux-04.jpg" class="photo-grid-item" alt="ui">
+                            <img src="images/Ui-Ux-01.jpg" class="photo-grid-item" alt="ui"> -->
+                        </section>
+                    </div>
+                </div>
+
+                <div id="frontend" class="branding">
+                    <p class="centered fs-6">Please visit the <a href="#">section web development in my portfolio</a> to see my works as developer.</p> 
+                        <!-- <br> <a href="#"> Click here. </a> </i> -->
+                </div>
+
+                <script>
+
+                    function allOnClick(){
+                        show(document.getElementById('branding'));
+                        show(document.getElementById('uidesign'));
+                        show(document.getElementById('frontend'));
+                    } 
+
+                    function brandingOnClick(){
+                        show(document.getElementById('branding'));
+                        hide(document.getElementById('uidesign'));
+                        hide(document.getElementById('frontend'));
+                        hide(document.getElementById('backend'));
+                    }
+
+                    function uiDesignOnClick(){
+                        hide(document.getElementById('branding'));
+                        show(document.getElementById('uidesign'));
+                        hide(document.getElementById('frontend'));
+                        hide(document.getElementById('backend'));
+                    }
+
+                    function frontendOnClick(){
+                        hide(document.getElementById('branding'));
+                        hide(document.getElementById('uidesign'));
+                        show(document.getElementById('frontend'));
+                        hide(document.getElementById('backend'));
+                    }
+
+                    // function backendOnClick(){
+                    //     hide(document.getElementById('branding'));
+                    //     hide(document.getElementById('uidesign'));
+                    //     hide(document.getElementById('frontend'));
+                    //     show(document.getElementById('backend'));
+                    // }
+                    
+
+                    function hide (elements) {
+                        elements = elements.length ? elements : [elements];
+                        for (var index = 0; index < elements.length; index++) {
+                            elements[index].style.display = 'none';
+                        }
+                    }
+
+                    function show (elements, specifiedDisplay) {
+                        elements = elements.length ? elements : [elements];
+                        for (var index = 0; index < elements.length; index++) {
+                            elements[index].style.display = specifiedDisplay || 'block';
+                        }
+                    }
+                </script>
+
             </div>
 
             <div class="container mt-5" id="contact" data-rate="0.2" data-effect="zoom" data-func="custom_show">
@@ -248,54 +316,64 @@
                 <br>
                 <p class="centered mt-2"><i>Let's realize beautiful projects together</i></p>
                 <div class="row mt-5 mx-auto">
-                    <div class="container col-md-4 bg-brand mx-1 p-4">
+                    <div class="container col-md-4 bg-brand p-4">
                         <span class="brand-white-50"> Let's make something special.</span>
                         <hr>
                         <p class="fs-4">Contact me right now</p>
                     </div>
-                    <div class="col-md container bg-light mx-1 p-4" id="contact-bg">
-                        <div class="form-row">
-                            <!-- <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="fullname" id="floatingInput" placeholder="Veuillez insérez votre nom complet">
-                                <label for="floatingInput">Nom complet</label>
+                    <div class="col-md container bg-light p-4" id="contact-bg">
+                        <div class="row g-3">
+                            <div class="form-floating col-md-12">
+                                <input type="text" class="form-control" name="fullname" placeholder="Veuillez insérez votre nom complet">
+                                <label for="floatingInput" class="ms-3">Nom complet</label>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
+                            <div class="form-floating col-md-12 ">
+                                <input type="email" class="form-control" name="email" placeholder="name@example.com">
+                                <label for="floatingInput" class="ms-3">Email address</label>
                             </div>
-                            <div class="form-floating">
-                                <textarea class="form-control" name="comment" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Comments</label>
+                            <div class="form-floating col-md-12">
+                                <textarea class="form-control h-100" name="comment" placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
+                                <label for="floatingTextarea2" class="ms-3">Comments</label>
                             </div>
                             <div class="mt-3">
                                 <button class="btn-brand-solid" type="submit">Envoyer</button>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="footer text-white mt-5 p-3"> 
-                <div class="footer-p text-white" id="footer-color">
-                    <a href="https://github.com/GillesRitchmond/" id="footer-color" class="footer-link mx-1 text-white">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://ht.linkedin.com/in/ritchmond-gilles-5187b5168" id="footer-color" class="footer-link text-white mx-1">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/made.by.ritchmond/" id="footer-color" class="footer-link text-white mx-1">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/GillesRitchmond/" id="footer-color" class="footer-link text-white mx-1">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </div>
+        <div class="footer text-white mt-5 p-3"> 
+            <div class="footer-p">
+                <a href="https://github.com/GillesRitchmond" class="footer-link mx-1">
+                    <i class="fab fa-github"></i>
+                    <!-- GitHub -->
+                </a>
+                <a href="https://ht.linkedin.com/in/ritchmond-gilles-5187b5168" class="footer-link mx-1">
+                    <i class="fab fa-linkedin"></i>
+                    <!-- LinkedIn -->
+                </a>
+                <a href="https://www.instagram.com/made.by.ritchmond" class="footer-link mx-1">
+                    <i class="fab fa-instagram"></i>
+                    <!-- Instagram -->
+                </a>
+                <a href="https://github.com/GillesRitchmond" class="footer-link mx-1">
+                    <i class="fab fa-facebook"></i>
+                    <!-- Facebook -->
+                </a>
             </div>
+        </div>
     </body>
 </html>
+
 <script type="text/javascript">
 
-    $('body').parallax({mode:1});
+    $('.banner-content').parallax({mode:1});
+    function custom_show(obj, mode) {
+        obj.children().addClass('animation animation_'+mode);
+    }
+    $('.content').parallax({mode:1});
     function custom_show(obj, mode) {
         obj.children().addClass('animation animation_'+mode);
     }

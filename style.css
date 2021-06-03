@@ -92,34 +92,26 @@ h1{
     width: auto;
     object-fit: cover;
 }
-
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--secondary-color);
-    overflow: hidden;
+#small-screen{
+    display: none;
+}
+.photo-grid-container{
+    column-count: 4;
+    column-width: 300px;
+    column-gap: 10px;
     width: 100%;
-    height: 100%;
-    transform: scale(0);
-    transition: .3s ease;
+    /* Remove max-width for full-screen grid */
+    /* max-width: 1600px; */
+    margin: auto;
+    object-fit: contain;
 }
-
-/* When you mouse over the container, the overlay text will "zoom" in display */
-.content-portfolio:hover .overlay {
-    transform: scale(1);
+.photo-grid-item{
+    margin: 0 auto 5px;
+    width: 100%;
+    border: 1px solid #dddddd; 
 }
-
-/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.branding .centered{
+    margin: 0 auto;
     text-align: center;
 }
 .p-width{
@@ -272,9 +264,9 @@ i{
 
 /* PORTFOLIO */
 .portfolio{
-    height: 200px;
+    height: 295px;
     width: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .my-work
 {
@@ -284,9 +276,9 @@ i{
     /* width: auto; */
 }
 .portfolio-img{
-    height: 200px;
-    width: 350px;
-    object-fit: contain;
+    height: 300px;
+    width: 425px;
+    object-fit: cover;
 }
 /* .portfolio-img .img{
     width: auto;
@@ -332,6 +324,10 @@ i{
     margin: 0 auto;
     text-align: center;
 }
+.contact-why{
+    width:fit-content;
+    padding: 0 10px;
+}
 .content-contact{
     margin-top: 55px;
 }
@@ -363,13 +359,13 @@ i{
 .footer .footer-link:hover{
     color: var(--third-color);
 }
-/* .footer-link{
+.footer-link{
     color: #FFF;
     text-decoration: none;
 }
 .footer-link:hover{
     color: var(--third-color);
-} */
+}
 
 @media screen and (min-width: 250px) and (max-width: 480px){
     body{
@@ -400,23 +396,46 @@ i{
     .p-width{
         width: auto;
     }
+    .space{
+        padding: 0 10px;
+    }
     #m-top{
         margin-top: 20px;
     }
     .portfolio{
-        padding: 10px;
-        width: 300px;
-        height: 200px;
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+    }
+    .branding{
+        width: auto;
+    }
+    .photo-grid-item{
+        margin: 0 auto 5px;
+        width: 100%;
+    }
+    .rs-img{
+        margin: 0 auto;
     }
     .portfolio-img{
-        height: 280px;
-        width: 280px;
-        object-fit: contain;
+        height: 300px;
+        width: 350px;
+        object-fit: cover;
     }
     .img{
+        height: 100%;
         width: auto;
-        /* height:; */
         object-fit: cover;
+    }
+    
+    #large-screen{
+        display: none;
+    }
+    #small-screen{
+        display:flex;
+    }
+    #small-screen .img{
+        margin: 0 auto;
     }
     h1{
         width: max-content;
@@ -437,9 +456,11 @@ i{
     .form-control{
         width: auto;
     } */
-
+    #contact{
+        width: auto;
+    }
     #contact .centered{
-        width: 300px;
+        width: 200px;
     }
     #contact .bg-brand{
         width: auto;
@@ -562,8 +583,8 @@ i{
     .content-contact .contact-why{
         margin-top: 30px;
     }
-    .content-contact .centered h1{
-        width: 300px;
+    .content-contact .centered{
+        width: auto;
         padding: 10px;
     }
 
