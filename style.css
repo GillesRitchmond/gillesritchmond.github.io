@@ -109,6 +109,10 @@ h1{
     margin: 0 auto 5px;
     width: 100%;
     border: 1px solid #dddddd; 
+    filter: grayscale(1);
+}
+.photo-grid-item:hover{
+    filter: none;
 }
 .branding .centered{
     margin: 0 auto;
