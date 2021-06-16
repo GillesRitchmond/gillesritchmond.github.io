@@ -638,7 +638,7 @@ i{
         display: none;
     }
     .content .row #col-width{
-        width: 400px;
+        width: auto;
     }
     h1{
         width: max-content;
@@ -648,7 +648,7 @@ i{
         width: 90%;
     }
     .bg-light .skills{
-        width: 350px;
+        width: auto;
     }
     .nav-item{
         padding: 0px;
