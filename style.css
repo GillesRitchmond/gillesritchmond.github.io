@@ -624,7 +624,7 @@ i{
         width: 100%; 
     }
     .p-width{
-        width: 320px;
+        width: auto;
     }
     #m-top{
         margin-top: 20px;
