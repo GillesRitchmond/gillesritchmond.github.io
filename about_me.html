@@ -14,7 +14,11 @@
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-         <!-- GOOGLE ICONS -->
+          <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200&display=swap" rel="stylesheet">
+        
+        <!-- GOOGLE ICONS -->
          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
          <link rel="stylesheet"
            href="https://fonts.googleapis.com/css2?family=Material+Icons">
@@ -276,22 +280,34 @@
                     </div>
                     <div class="col-md container bg-light mx-1 p-4" id="contact-bg">
                         <div class="row g-3">
-                            <div class="form-floating col-md-12 ">
-                                <input type="text" class="form-control" name="fullname" placeholder="Veuillez insérez votre nom complet">
-                                <label for="floatingInput" class="ms-3">Nom complet</label>
+                            <div class="form col-md-12">
+                               <!-- WhatsApp -->
+                               <label for="floatingInput" class="ms-3 mt-1">WhatsApp</label>
+                               <input type="text" class="form-control mt-2" readonly value="(509) 44 38 7245" name="fullname" placeholder="Veuillez insérez votre nom complet">
+                               
+                           </div>
+
+                           <div class="form- col-md-12 ">
+                               <label for="floatingInput" class="ms-3 mt-1">Email address</label>
+                               <input type="email" class="form-control mt-2" readonly value="gritchmond@gmail.com" name="email" placeholder="name@example.com">
                             </div>
-                            <div class="form-floating col-md-12 ">
-                                <input type="email" class="form-control" name="email" placeholder="name@example.com">
-                                <label for="floatingInput" class="ms-3">Email address</label>
+
+                            <div class="form- col-md-12 ">
+                               <label for="floatingInput" class="ms-3 mt-1">LinkedIn</label>
+                               <input type="email" class="form-control mt-2" readonly value="https://ht.linkedin.com/in/ritchmond-gilles-5187b5168" name="email" placeholder="name@example.com">
                             </div>
-                            <div class="form-floating col-md-12">
-                                <textarea class="form-control h-100" name="comment" placeholder="Leave a comment here"></textarea>
-                                <label for="floatingTextarea2" class="ms-3">Comments</label>
-                            </div>
-                            <div class="mt-3">
-                                <button class="btn-brand-solid" type="submit">Envoyer</button>
-                            </div>
-                        </div>
+
+                           
+
+                           <!-- <div class="form- col-md-12"> -->
+                               <!-- <textarea class="form-control h-100" name="comment" placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
+                               <label for="floatingTextarea2" class="ms-3">Comments</label> -->
+                           <!-- </div> -->
+                           <!-- <div class="mt-3">
+                               <button class="btn-brand-solid" type="submit">Envoyer</button>
+                           </div> -->
+                       </div>
+                       
                     </div>
                 </div>
             </div>
