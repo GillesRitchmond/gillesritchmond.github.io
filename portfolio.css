@@ -87,7 +87,7 @@ hr {
 /* Portfolio */
     @font-face {
         font-family: 'Poppins';
-        src: url('/style/fonts/Poppins-Light.ttf') format('truetype');
+        src: url('Poppins-Light.ttf') format('truetype');
     }
     .poppins{
         font-family: 'Poppins', sans-serif;
