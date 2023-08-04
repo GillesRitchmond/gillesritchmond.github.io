@@ -87,7 +87,7 @@ hr {
 /* Portfolio */
     @font-face {
         font-family: 'Poppins';
-        src: url('Poppins-Light.ttf') format('truetype');
+        src: url('/style/fonts/Poppins-Light.ttf') format('truetype');
     }
     .poppins{
         font-family: 'Poppins', sans-serif;
@@ -110,6 +110,9 @@ hr {
     }
     .objet, .bio{
         line-height: 1.3;
+    }
+    .nav-link:hover{
+        color: var(--text-color-focus);
     }
     .transparency{
         color: var(--ultra-light);
@@ -168,6 +171,12 @@ hr {
     .cv-subtitle:hover{
         border: 2px solid var(--bg-btn-focus);
     }
+    .col-md-8{
+        width: 90%;
+    }
+    .col-md-4{
+        width: 10%;
+    }
 
 
 @media screen and (max-width: 900px) {
@@ -201,5 +210,17 @@ hr {
     }
     .invert-this .transparency br{
         display: none;
+    }
+    .col-md-9{
+        width: 100%;
+    }
+    .col-md-8{
+        width: 80%;
+    }
+    .col-md-4{
+        width: 20%;
+    }
+    .nav-link > .transparency{
+        margin-top: 1em;
     }
 }
